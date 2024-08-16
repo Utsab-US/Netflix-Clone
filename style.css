@@ -103,14 +103,14 @@ nav button:nth-child(2) {
     border: 1px solid #555;
     border-radius: 4px;
     box-sizing: border-box;
-    font-size: 1.2em;
+
     padding: 20px;
 
 }
 
 .email-input input::placeholder {
     color: #ededed;
-    font-size: 1em;
+    font-size: 1.4em;
 }
 
 .email-input button {
@@ -187,7 +187,6 @@ nav button:nth-child(2) {
     border-radius: 10px;
     display: flex;
     font-size: .7em;
-    /* justify-content: space-between; */
     gap: 40px;
     align-items: center;
 }
@@ -249,7 +248,46 @@ footer button {
     border: 1px solid #444;
 }
 
+
+footer {
+    height: 37vh;
+}
 #footer-container {
-    width: 60vw;
-    margin: auto;
+    width: 50vw;
+    position: relative;
+    left: 370px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#footer-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#footer-links ul {
+    list-style: none;
+    line-height: 40px;
+}
+
+#footer-links a {
+    color: #bbb;
+}
+
+#last-container {
+    width: 50vw;
+    position: relative;
+    left: 370px;
+    margin-top: 20px;
+    line-height: 40px;
+
+}
+
+
+#footer-links a, #last-container div {
+    /* background-color: red; */
+    font-size: 0.9em;
 }

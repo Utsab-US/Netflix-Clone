@@ -239,34 +239,6 @@ nav button:nth-child(2) {
     font-size: .6em;
 }
 
-#faqs input{
-    font-size: 20px;
-}
-
-#footer-container {
-    height: 50vh;
-    width: 60vh;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#footer-links {
-    display: flex;
-    gap: 200px;
-
-}
-
-#footer-links ul {
-    list-style: none;
-    text-decoration: none;
-    line-height: 40px;
-}
-
-#footer-links ul li {
-    text-wrap: nowrap;
-}
-
 footer button {
     font-size: medium;
     padding: 7px;
@@ -277,3 +249,6 @@ footer button {
     border: 1px solid #444;
 }
 
+#footer-container {
+    
+}

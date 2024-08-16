@@ -250,5 +250,6 @@ footer button {
 }
 
 #footer-container {
-    
+    width: 60vw;
+    margin: auto;
 }

@@ -97,7 +97,6 @@ nav button:nth-child(2) {
     margin-top: 10px;
     display: flex;
     gap: 4px;
-    /* justify-content: center; */
     align-items: center;
 }
 
@@ -150,10 +149,6 @@ nav button:nth-child(2) {
 
 }
 
-/* #faqs {
-    height: 10vh;
-} */
-
 .section-image-right > div:nth-child(2) {
     position: relative;
     scale: 0.8;
@@ -188,10 +183,6 @@ nav button:nth-child(2) {
     font-size: .7em;
 }
 
-/* #img-with-batch {
-    display: flex;
-    flex-direction: column;
-} */
 
 #batch {
     position: absolute;
@@ -274,21 +265,26 @@ footer button {
 
 
 footer {
-    height: 37vh;
+    height: 57vh;
+    position: relative;
+    left: 20%;
+    text-wrap: nowrap;
 }
 #footer-container {
     width: 50vw;
     position: relative;
-    left: 370px;
     margin-top: 60px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+
 }
 
 #footer-links {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 
 
@@ -304,7 +300,6 @@ footer {
 #last-container {
     width: 50vw;
     position: relative;
-    left: 370px;
     margin-top: 20px;
     line-height: 40px;
 
@@ -312,7 +307,6 @@ footer {
 
 
 #footer-links a, #last-container div {
-    /* background-color: red; */
     font-size: 0.9em;
 }
 
@@ -380,14 +374,15 @@ footer {
         width: 65vw;
     }
 
-    /* .img *{
-        width: 100vw;
-    } */
-
     #batch {
         left: 10%;
         transform: scaleX(-10px);
         scale: 0.8;
+    }
+
+    footer {
+        left: 5%;
+        margin-left: 10px;
     }
 }
 
@@ -401,6 +396,13 @@ footer {
         width: 80vw;
     }
 
+    #footer-links {
+        flex-direction: column;
+    }
+
+    footer {
+        height: 100vh;
+    }
     
 }
 
@@ -412,9 +414,20 @@ footer {
     
 }   
 
+@media screen and (max-width: 500px) {
+    footer {
+        left: 10%;
+        margin-left: 10px;
+    }
+}
+
 @media screen and (max-width: 450px) {
     
-
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
     #batch {
         left: 1%;
         scale: 0.7;

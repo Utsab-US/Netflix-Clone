@@ -36,11 +36,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 61vw;
+    max-width: 60vw;
     margin: auto;
     position: relative;
     z-index: 12;
 }
+
+
 
 nav button {
     font-size: medium;
@@ -95,6 +97,8 @@ nav button:nth-child(2) {
     margin-top: 10px;
     display: flex;
     gap: 4px;
+    /* justify-content: center; */
+    align-items: center;
 }
 
 .email-input input,
@@ -146,6 +150,10 @@ nav button:nth-child(2) {
 
 }
 
+/* #faqs {
+    height: 10vh;
+} */
+
 .section-image-right > div:nth-child(2) {
     position: relative;
     scale: 0.8;
@@ -180,10 +188,15 @@ nav button:nth-child(2) {
     font-size: .7em;
 }
 
+/* #img-with-batch {
+    display: flex;
+    flex-direction: column;
+} */
+
 #batch {
     position: absolute;
     top: 65%;
-    left: 110px;
+    left: 18%;
     height: 120px;
     width: 400px;
     background-color: black;
@@ -213,6 +226,7 @@ nav button:nth-child(2) {
 }
 
 #faqs h1 {
+    text-align: center;
     font-weight: 900;
     margin: 10px;
 }
@@ -245,6 +259,7 @@ nav button:nth-child(2) {
 #ready-to-watch {
     margin: 30px 0 20px 0;
     font-size: .6em;
+    text-align: center;
 }
 
 footer button {
@@ -300,3 +315,109 @@ footer {
     /* background-color: red; */
     font-size: 0.9em;
 }
+
+
+@media screen and (max-width: 1920px) {
+    #main nav {
+        max-width: 80vw;
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+    #main nav {
+        max-width: 90vw;
+    }
+
+    .section {
+        max-width: 90vw;
+    }
+
+    #questions div {
+        width: 90vw;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .hero h1, #first-div, #second-div {
+        scale: 0.7;
+    }
+
+    .section {
+        flex-direction: column;
+        text-align: center;
+        height: 90vh;
+    }
+
+    .section h1 {
+        font-size: 32px;
+    }
+    
+    #faqs h1 {
+        font-size: 32px;
+    }
+    
+}
+
+@media screen and (min-width: 1920px) {
+    .section {
+        max-width: 60vw;
+        scale: 0.9;
+        
+    }
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .section img:not(#batch-img) {
+        width: 100vw;
+        
+    }
+
+    .section video {
+        width: 65vw;
+    }
+
+    /* .img *{
+        width: 100vw;
+    } */
+
+    #batch {
+        left: 10%;
+        transform: scaleX(-10px);
+        scale: 0.8;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .email-input {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .email-input input {
+        width: 80vw;
+    }
+
+    
+}
+
+@media screen and (max-width: 660px) {
+    #faqs {
+        height: 120vh;
+    }
+
+    
+}   
+
+@media screen and (max-width: 450px) {
+    
+
+    #batch {
+        left: 1%;
+        scale: 0.7;
+    }
+}
+

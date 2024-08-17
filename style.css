@@ -237,6 +237,10 @@ nav button:nth-child(2) {
     
 }
 
+#questions div:hover  {
+    background-color: #414141;
+}
+
 #ready-to-watch {
     margin: 30px 0 20px 0;
     font-size: .6em;
